@@ -29,7 +29,7 @@
               <form action="{% url 'toggle' %}" method='POST' class='js-toggle-form'>
                 {% csrf_token %}
                 <input type="hidden" name="todo_id" value="{{ todo.id }}">
-                <input class="toggle" type="checkbox" {% if todo.completed %}checked="checked"{% endif %}>
+                <input class="toggle-all" type="checkbox" {% if todo.completed %}checked="checked"{% endif %}>
               </form>
               <label class='js-todo-title'>{{ todo.title }}</label>
               <form action="{% url 'destroy' %}" method='POST' class='js-destroy-form'>
