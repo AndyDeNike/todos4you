@@ -349,6 +349,13 @@ html #clear-completed:active {
 	Hack to remove background from Mobile Safari.
 	Can't use it globally since it destroys checkboxes in Firefox
 */
+
+@media(max-width: 768px){
+	h1 {
+		font-size: 75px;
+	}
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	#toggle-all,
 	#todo-list li .toggle {
