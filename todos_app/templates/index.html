@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Django TODOs API</title>
+  <title>todos4yous</title>
   <link rel="stylesheet" href="static/css/base.css">
   <link rel="stylesheet" href="static/css/index.css">
   <link rel="stylesheet" href="static/css/app.css">
@@ -12,10 +12,10 @@
 <body>
   <section id="todoapp">
     <header id="header">
-      <h1>todos</h1>
+      <h1>todos4yous</h1>
       <form action="{% url 'create' %}" method='POST'>
         {% csrf_token %}
-        <input id="new-todo" placeholder="What needs to be done?" name='title' autofocus="">
+        <input id="new-todo" placeholder="Create a new todo item!" name='title' autofocus="">
       </form>
 
     </header>
@@ -59,9 +59,6 @@
     </footer>
   </section>
   <footer id="info">
-    <p>Built by <a href="https://rmotr.com">RMOTR</a> for our <a href="https://rmotr.com/web-development-django-python-course">Web Development Course</a></p>
-    <p>Forked from<a href="http://todomvc.com">TodoMVC</a></p>
-    <p>Created by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
   </footer>
   <script src="static/js/jquery.js"></script>
   <script src="static/js/app.js"></script>
