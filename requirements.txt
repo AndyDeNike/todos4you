@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Django==2.0.4
+=======
+Django==2.2.13
+>>>>>>> ddfb6795f1448a1bd8bed0895ea8022349764abe
 requests==2.18.4
 django-model-utils==3.1.1
 djangorestframework==3.8.2
